@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Darkest Dungeon Project</string>
+    <!-- locations -->
+    <string name="locations_ruins">Ruins</string>
+    <string name="locations_weald">Weald</string>
+    <string name="locations_warrens">Warrens</string>
+    <string name="locations_cove">Cove</string>
+    <!-- drawer_view -->
+    <string name="drawer_item_enemies">Enemies</string>
+
 </resources>

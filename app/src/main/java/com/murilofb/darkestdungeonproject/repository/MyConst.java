@@ -1,6 +1,7 @@
-package com.murilofb.darkestdungeonproject.models;
+package com.murilofb.darkestdungeonproject.repository;
 
 import com.murilofb.darkestdungeonproject.R;
+import com.murilofb.darkestdungeonproject.models.Enemy;
 
 public class MyConst {
 
@@ -18,14 +19,22 @@ public class MyConst {
     }
 
     public static class Enemies {
-        public static final Character BRAWLER(int level, int difficulty) {
-            return new Character( level, difficulty)
-                    .setType(CharStats.TYPE_HUMAN)
+
+        public static final Enemy BRAWLER(int level, int difficulty) {
+            return new Enemy(level, difficulty).setImageResource(R.drawable.enemy_cultist_brawler)
                     .setNames("Cultist Brawler", "Cultist Gladiator", "Cultist Champion")
-                    .setImageResource(R.drawable.enemy_cultist_brawler)
+                    .setType(CharStats.TYPE_HUMAN)
                     .setSize(CharStats.SIZE_AVERAGE)
                     .setActionsPerRound(1)
-                    .setHP(15,21,29,18,26,35);
+                    .setHp(15, 21, 29, 18, 26, 35)
+                    .setDodge(0, 8.75, 21.25)
+                    .setProtection(0, 0, 0)
+                    .setSpeed(5, 6, 7)
+                    .setStunRes(0.25, 0.45, 0.65)
+                    .setBlightRes(0.20, 0.40, 0.60)
+                    .setBleedRes(0.20, 0.40, 0.60)
+                    .setDebuffRes(0.15, 0.35, 0.55)
+                    .setMoveRes(0.25, 0.45, 0.65);
         }
     }
 }
