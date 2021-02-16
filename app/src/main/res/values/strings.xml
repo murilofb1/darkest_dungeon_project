@@ -9,4 +9,8 @@
     <string name="title_locations">Locations</string>
     <string name="title_home">Home</string>
 
+    <!-- LocationsFragment -->
+    <string name="enemies_dropdown_title">Enemies</string>
+    <string name="curios_dropdown_title">Curios</string>
+
 </resources>

@@ -4,5 +4,6 @@
     <style name="ddTextTheme" parent="">
         <item name="fontFamily">@font/font_family_dwarven_axe_ish</item>
         <item name="android:textColor">@color/ddTextColor</item>
+        <item name="android:textSize">20sp</item>
     </style>
 </resources>

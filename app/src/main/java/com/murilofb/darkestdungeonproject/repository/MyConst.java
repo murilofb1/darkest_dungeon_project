@@ -5,13 +5,14 @@ import com.murilofb.darkestdungeonproject.models.Enemy;
 
 public class MyConst {
 
-    public static class DifficultyAndLevels {
-        public static final int APPRENTICE_LEVEL = 0;
-        public static final int VETERAN_LEVEL = 3;
-        public static final int CHAMPION_LEVEL = 5;
-        public static final int DIFFICULTY_NORMAL = 0;
-        public static final int DIFFICULTY_STYGIAN = 1;
-    }
+    // Run Levels
+    public static final int APPRENTICE_LEVEL = 0;
+    public static final int VETERAN_LEVEL = 3;
+    public static final int CHAMPION_LEVEL = 5;
+
+    // Difficulty Levels
+    public static final int DIFFICULTY_NORMAL = 0;
+    public static final int DIFFICULTY_STYGIAN = 1;
 
     public static class CharStats {
         public static final String TYPE_HUMAN = "Human";

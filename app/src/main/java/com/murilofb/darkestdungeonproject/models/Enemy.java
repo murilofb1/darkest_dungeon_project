@@ -20,9 +20,9 @@ public class Enemy extends Character {
     private double[] moveRes;
 
     public Enemy(int runLevel, int difficulty) {
-        if (runLevel == MyConst.DifficultyAndLevels.APPRENTICE_LEVEL) setArrIndex(0);
-        else if (runLevel == MyConst.DifficultyAndLevels.VETERAN_LEVEL) setArrIndex(1);
-        else if (runLevel == MyConst.DifficultyAndLevels.CHAMPION_LEVEL) setArrIndex(2);
+        if (runLevel == MyConst.APPRENTICE_LEVEL) setArrIndex(0);
+        else if (runLevel == MyConst.VETERAN_LEVEL) setArrIndex(1);
+        else if (runLevel == MyConst.CHAMPION_LEVEL) setArrIndex(2);
         this.difficulty = difficulty;
     }
 
@@ -42,7 +42,7 @@ public class Enemy extends Character {
     @Override
     public int getHp() {
         int[] hpArr = getHpArr();
-        if (difficulty == MyConst.DifficultyAndLevels.DIFFICULTY_NORMAL)
+        if (difficulty == MyConst.DIFFICULTY_NORMAL)
             return hpArr[getArrIndex()];
         else return hpArr[getArrIndex() + 3];
     }

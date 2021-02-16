@@ -9,24 +9,33 @@
     <include layout="@layout/layout_select_location" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/txtOpenEnemies"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableRight="@drawable/ic_drop_down"
+        android:drawableTint="@color/ddTextColor"
         android:fontFamily="@font/font_family_dwarven_axe_ish"
-        android:gravity="center"
-        android:text="ENEMIES"
+        android:text="@string/enemies_dropdown_title"
+        android:textAllCaps="true"
         android:textColor="@color/ddTextColor"
         android:textSize="26sp" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerEnemies"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/txtOpenCurios"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableRight="@drawable/ic_drop_down"
+        android:drawableTint="@color/ddTextColor"
         android:fontFamily="@font/font_family_dwarven_axe_ish"
-        android:gravity="center"
-        android:text="CURIOS"
+        android:text="@string/curios_dropdown_title"
+        android:textAllCaps="true"
         android:textColor="@color/ddTextColor"
         android:textSize="26sp" />
 </LinearLayout>
