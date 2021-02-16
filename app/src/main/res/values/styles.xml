@@ -3,5 +3,6 @@
 
     <style name="ddTextTheme" parent="">
         <item name="fontFamily">@font/font_family_dwarven_axe_ish</item>
+        <item name="android:textColor">@color/ddTextColor</item>
     </style>
 </resources>

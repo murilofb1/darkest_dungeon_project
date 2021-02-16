@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ddTextTheme">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSelectRuins"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="5dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/locations_ruins"
+        android:textColor="@color/ddTextColor"
+        app:layout_constraintBottom_toTopOf="@id/btnSelectCove"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnSelectWarrens"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSelectCove"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/locations_cove"
+        android:textColor="@color/ddTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btnSelectWeald"
+        app:layout_constraintTop_toBottomOf="@id/btnSelectRuins" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSelectWarrens"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:text="@string/locations_warrens"
+        android:textColor="@color/ddTextColor"
+        app:layout_constraintBottom_toTopOf="@id/btnSelectWeald"
+        app:layout_constraintLeft_toRightOf="@id/btnSelectRuins"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSelectWeald"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:text="@string/locations_weald"
+        android:textColor="@color/ddTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btnSelectCove"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnSelectWarrens" />
+</androidx.constraintlayout.widget.ConstraintLayout>

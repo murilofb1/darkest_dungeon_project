@@ -2,7 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/idEnemies"
-            android:title="@string/drawer_item_enemies" />
+            android:id="@+id/menu_home"
+            android:title="@string/title_home" />
+        <item
+            android:id="@+id/menu_locations"
+            android:title="@string/title_locations" />
     </group>
 </menu>

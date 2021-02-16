@@ -9,14 +9,16 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class EnemiesFragment extends Fragment {
-    public EnemiesFragment() {
+public class HomeFragment extends Fragment {
+
+    public HomeFragment() {
     }
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_enemies, container, false);
-        return view;
+        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        if (view != null) return view;
+        else return super.onCreateView(inflater, container, savedInstanceState);
     }
 }

@@ -9,5 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <!-- my_colors -->
     <color name="ddTextColor">#C6BB79</color>
+    <color name="dd_background">#333333</color>
 
 </resources>

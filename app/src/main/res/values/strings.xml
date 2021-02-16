@@ -6,6 +6,7 @@
     <string name="locations_warrens">Warrens</string>
     <string name="locations_cove">Cove</string>
     <!-- drawer_view -->
-    <string name="drawer_item_enemies">Enemies</string>
+    <string name="title_locations">Locations</string>
+    <string name="title_home">Home</string>
 
 </resources>
