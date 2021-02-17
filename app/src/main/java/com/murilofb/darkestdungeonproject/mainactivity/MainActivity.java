@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         if (drawerLayout.isOpen()) drawerLayout.closeDrawer(GravityCompat.START);
-        else if (!mainVm.isValidDestination(R.id.nav_home)) navController.navigate(R.id.go_to_home);
+        else if (mainVm.isValidDestination(R.id.nav_home)) navController.navigate(R.id.go_to_home);
         else super.onBackPressed();
     }
 
@@ -55,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawerLayout);
         navigationView = findViewById(R.id.navigation_view);
         navController = Navigation.findNavController(this, R.id.nav_host_fragment);
-        //
         appBarConfiguration = new AppBarConfiguration.Builder(R.id.nav_home, R.id.nav_locations)
                 .setDrawerLayout(drawerLayout)
                 .build();

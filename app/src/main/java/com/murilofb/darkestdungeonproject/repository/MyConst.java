@@ -1,7 +1,9 @@
 package com.murilofb.darkestdungeonproject.repository;
 
 import com.murilofb.darkestdungeonproject.R;
+import com.murilofb.darkestdungeonproject.models.Curio;
 import com.murilofb.darkestdungeonproject.models.Enemy;
+import com.murilofb.darkestdungeonproject.models.Provision;
 
 public class MyConst {
 
@@ -14,12 +16,38 @@ public class MyConst {
     public static final int DIFFICULTY_NORMAL = 0;
     public static final int DIFFICULTY_STYGIAN = 1;
 
+
+    public class CurioStats {
+        public static final String TYPE_TREASURE = "Treasure";
+        public static final int INTERACTION_NOTHING = 0;
+        public static final int INTERACTION_PURGE = 1;
+        public static final int INTERACTION_HEIRLOOM = 2;
+    }
+
     public static class CharStats {
         public static final String TYPE_HUMAN = "Human";
         public static final String SIZE_AVERAGE = "Average";
     }
 
-    public static class Enemies {
+
+    public static class ProvisionsDB {
+        public static final Provision TORCH = new Provision("Torch", R.drawable.provision_torch);
+    }
+
+    public static class CuriosDB {
+
+        public static final Curio CRATE() {
+            Curio.Interaction default1 = new Curio.Interaction(CurioStats.INTERACTION_HEIRLOOM, "75% Heirloom");
+            Curio.Interaction default2 = new Curio.Interaction(CurioStats.INTERACTION_HEIRLOOM, "25% Nothing");
+            return new Curio()
+                    .setName("Crate")
+                    .setTypes(new String[]{CurioStats.TYPE_TREASURE})
+                    .addInteraction(default1)
+                    .addInteraction(default2);
+        }
+    }
+
+    public static class EnemiesDB {
 
         public static final Enemy BRAWLER(int level, int difficulty) {
             return new Enemy(level, difficulty).setImageResource(R.drawable.enemy_cultist_brawler)

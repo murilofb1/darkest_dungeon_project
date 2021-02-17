@@ -8,34 +8,44 @@
 
     <include layout="@layout/layout_select_location" />
 
-    <TextView
-        android:id="@+id/txtOpenEnemies"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:drawableRight="@drawable/ic_drop_down"
-        android:drawableTint="@color/ddTextColor"
-        android:fontFamily="@font/font_family_dwarven_axe_ish"
-        android:text="@string/enemies_dropdown_title"
-        android:textAllCaps="true"
-        android:textColor="@color/ddTextColor"
-        android:textSize="26sp" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerEnemies"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/txtOpenCurios"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:drawableRight="@drawable/ic_drop_down"
-        android:drawableTint="@color/ddTextColor"
-        android:fontFamily="@font/font_family_dwarven_axe_ish"
-        android:text="@string/curios_dropdown_title"
-        android:textAllCaps="true"
-        android:textColor="@color/ddTextColor"
-        android:textSize="26sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtOpenEnemies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTint="@color/ddTextColor"
+                android:fontFamily="@font/font_family_dwarven_axe_ish"
+                android:text="@string/enemies_dropdown_title"
+                android:textAllCaps="true"
+                android:textColor="@color/ddTextColor"
+                android:textSize="26sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerEnemies"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="match_parent" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/txtOpenCurios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableTint="@color/ddTextColor"
+                android:fontFamily="@font/font_family_dwarven_axe_ish"
+                android:text="@string/curios_dropdown_title"
+                android:textAllCaps="true"
+                android:textColor="@color/ddTextColor"
+                android:textSize="26sp" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

@@ -32,7 +32,6 @@ public class EnemiesAdapter extends RecyclerView.Adapter<EnemiesAdapter.EnemiesV
     public void onBindViewHolder(@NonNull EnemiesViewHolder holder, int position) {
         Enemy currentEnemy = enemiesList.get(position);
         String enemyName = currentEnemy.getName();
-
         holder.txtEnemyName.setText(splitName(enemyName));
     }
 
